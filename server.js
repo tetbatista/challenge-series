@@ -88,7 +88,7 @@ app.get('/series/gender/:gender', async (req, res) => {
         console.log('Series encontradas', series);
         
         if (series.length === 0) {
-            return res.status(404).send('No series found for the specified genre')
+            return res.status(404).send('No series found for the specified genre!')
         }
 
         res.json(series);
